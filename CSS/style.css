@@ -1,0 +1,281 @@
+/* CSS for all pages*/
+html{
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: table;
+}
+nav{
+	padding: 10px;
+	font-size: 3vh;
+	text-align: center;
+}
+nav ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	background: #FFFFFF; 
+	border: 1px solid #ADA9A9;
+	height: 6vh;
+	
+}
+nav ul li{
+	display: inline-block;
+}
+nav a{ 
+	color: #ADA9A9;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-family: 'IBM Plex Mono', monospace;
+}
+nav a:hover{
+	color: #8D6F57;
+}
+nav select{
+	display: none;
+}
+body{
+	background: #FCF7EA;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+/* Begin CSS for Index*/
+.super nav{
+	margin: 10px 10px 80px 10px;
+}
+.class1 nav{
+	margin: 10px 10px 80px 10px;	
+}
+.class2 nav{
+	margin: 10px 10px 80px 10px;	
+}
+.contactme nav{
+margin: 10px 10px 80px 10px;	
+}
+.staple nav{
+	margin: 10px 10px 0 10px;
+}
+main ul{
+	margin: 0;
+	padding: 0;
+}
+main ul{
+	list-style: none;
+	height: 20vh;
+	align-content: right;
+}
+main li{
+	display: inline;
+	/*padding-right: 15px;*/
+	padding: 0;
+	margin: 0;
+	width: 10px;
+	height: 10px;
+}
+.div{
+	padding-top: 50px;
+}
+.div img{
+	width: 7vw;
+	height: 7vh;
+	fill: #8D6F57;
+}
+main{
+	font-family: 'IBM Plex Mono', monospace;
+	width: 65vw;
+	height: 45vh;
+	background-color: #FFFFFF;
+	position: relative;
+	margin: 20px;
+	padding: 10vw 5vh 0 10vw;
+	overflow: scroll;
+	border: 1px solid #ADA9A9; 
+	display:flex;
+    flex-direction:row;
+	justify-content: space-around;
+}
+div{
+	text-align: center;
+	vertical-align: middle;
+	height: 40vh;
+}
+span{
+	font-family: 'Allura', cursive;
+	font-size: 100px;
+	text-align: center;
+	color: #8D6F57;
+}
+.super p{
+	text-align: right;
+	font-size: 20px;
+	color: #ADA9A9;
+}
+main img{
+	height: 40vh;
+}
+/* Begin CSS for Photography*/
+h1{
+	color: #8D6F57;
+}
+.stuff{
+	margin: 0;
+	height: 20vh;
+	color: #ADA9A9;
+	font-size: 20px;
+}
+#photos{
+	overflow: scroll;
+	background: #FFFFFF;
+	height: 60vh;
+}
+.iphonepics{
+	
+}
+.iphonepics img {
+	/*width:20vw;*/
+	height:40vh;
+	transition: transform 1s;
+}
+.iphonepics img:hover {
+	transform: scale(1.25);
+}
+.campics{
+	background: #FFFFFF;
+	padding: 10px;
+	margin: auto;
+}
+.campics img {
+	/*width:20vw;*/
+	height:40vh;
+	transition: transform 1s;
+}
+
+.campics img:hover {
+	transform: scale(1.25);
+}
+/* Begin CSS for Contact*/
+.ThisForm{
+	padding:10px 30px;
+	background-color: #FFFFFF;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	border: 1px solid #ADA9A9;
+	color: grey;
+}
+.ThisForm h1{
+	color: #8D6F57;
+	text-shadow: 3px;
+}
+main #low{
+	overflow: scroll;
+	color: #ADA9A9;
+}
+
+main .stuff{
+	width: 30vw;
+	padding-top: 5vh;
+	height: 40vh;
+	display: inline-flex;
+}
+.photography h1{
+	text-align: center;
+}
+.clown{
+	color:#ADA9A9;
+}
+
+main{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	100%{
+		-webkit-transform: translateY(0%);
+	}
+}
+@media (max-width: 950px){
+	nav ul {
+		text-align:right;
+		display: inline;
+}
+	/*nav select{
+		display: inline-block;
+		font-size: 20px;
+		font-family: 'IBM Plex Mono', monospace;
+	}*/
+}
+@media only screen and (max-width: 950px){
+	main{
+	font-family: 'IBM Plex Mono', monospace;
+	width: 65vw;
+	height: 60vh;
+	background-color: #FFFFFF;
+	position: relative;
+	margin: 20px;
+	padding: 10vw 5vh 0 10vw;
+	overflow: scroll;
+	border: 1px solid #ADA9A9; 
+	display: inline-block;
+	}
+	.div{
+		padding:0;
+		height: 40vh;
+	}
+	main .photography{
+	margin: 0;
+	padding-top: 0;
+	width: 30vw;
+	height: 0;
+	color: #ADA9A9;
+	font-size: 10px;
+	text-align: center;
+	display: table;
+	}
+	.super span{
+	font-family: 'Allura', cursive;
+	font-size: 90px;
+	color: #8D6F57;
+	}
+	main .stuff{
+		height: 20vh;
+	}
+	.stuff span{
+		font-size: 70px;
+		vertical-align: middle;
+	}
+	.photography{
+		padding-top: auto;	
+	}
+	.photography h1{
+		display: inline-flex;
+		line-height: 15%;
+		width: 80vw;
+	}
+}
